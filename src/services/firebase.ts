@@ -19,10 +19,7 @@ firebase.initializeApp(firebaseConfig);
 
 // export { auth, database, firebase};
 
-const provider = new firebase.auth.GoogleAuthProvider()
-const auth = firebase.auth()
-export {
-  firebase,
-  provider,
-  auth
-}
+const provider = new firebase.auth.GoogleAuthProvider();
+const auth = firebase.auth();
+const database = firebase.database();
+export { firebase, provider, auth, database };
